@@ -1,0 +1,11 @@
+{
+  "name": "pterodactyl-offlinedetect",
+  "version": "1.0.0",
+  "description": "Restarts a Pterodactyl Server if it is down",
+  "main": "index.js",
+  "author": "KyanG7",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
