@@ -11,7 +11,7 @@ setInterval(async () => {
     let status = response.data.attributes.current_state;
     if (status == "offline") {
         console.log('Server is offline. Sending startup request')
-        axios.post(`${baseUrl}/api/client/servers/${identifier}/power`, {
+        axios.post(`${config.base_url}/api/client/servers/${config.server_identifier}/power`, {
             "signal": "start",
         }, {
             timeout: 1000,
